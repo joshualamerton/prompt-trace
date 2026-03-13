@@ -1,24 +1,44 @@
 # PromptTrace
+================
 
-![License](https://img.shields.io/badge/license-Apache--2.0-blue)
-![Python](https://img.shields.io/badge/python-3.9+-blue)
-![Status](https://img.shields.io/badge/build-experimental-orange)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.9+-blue)](https://www.python.org/)
+[![Status](https://img.shields.io/badge/build-experimental-orange)](README.md#roadmap)
 
-PromptTrace is a lightweight debugging tool for recording prompts and responses in LLM workflows.
+## Overview
+-----------
 
-It helps developers inspect prompt history and trace how model interactions evolve over time.
+PromptTrace is a lightweight debugging tool designed to record and analyze prompts and responses in Large Language Model (LLM) workflows. This tool enables developers to inspect prompt history and understand how model interactions evolve over time.
 
 ## Quick Start
+--------------
 
-Clone the repository and run the demo.
+To get started with PromptTrace, follow these steps:
+
+### Clone the Repository
 
 ```bash
 git clone https://github.com/joshuamlamerton/prompttrace
+```
+
+### Navigate to the Project Directory
+
+```bash
 cd prompttrace
+```
+
+### Run the Demo
+
+```bash
 python examples/demo.py
 ```
 
+This demo showcases the basic functionality of PromptTrace, including prompt recording, response logging, and trace history storage.
+
 ## Architecture
+--------------
+
+The following diagram illustrates the high-level architecture of PromptTrace:
 
 ```mermaid
 flowchart TB
@@ -34,15 +54,19 @@ D --> B
 B --> C
 ```
 
-## What it does
+## Features
+------------
 
-The demo shows:
+The demo illustrates the following key features of PromptTrace:
 
-- a prompt being recorded
-- a response being recorded
-- a trace history being stored
+*   **Prompt Recording**: Records user input prompts.
+*   **Response Logging**: Stores model responses to user prompts.
+*   **Trace History**: Stores a record of all prompts and responses, enabling developers to inspect and analyze the interaction history.
 
 ## Repository Structure
+-------------------------
+
+The PromptTrace repository is organized as follows:
 
 ```text
 prompttrace
@@ -61,15 +85,24 @@ examples
 ```
 
 ## Roadmap
+------------
 
-Phase 1  
-Prompt-response logging
+The development roadmap for PromptTrace is divided into four phases:
 
-Phase 2  
-Trace filtering
+### Phase 1: Prompt-Response Logging
 
-Phase 3  
-Session replay
+*   Implement basic prompt-response logging functionality.
 
-Phase 4  
-Dashboard visualization
+### Phase 2: Trace Filtering
+
+*   Introduce filtering capabilities to enable developers to analyze specific interactions.
+
+### Phase 3: Session Replay
+
+*   Develop a session replay feature to allow developers to re-examine interaction history.
+
+### Phase 4: Dashboard Visualization
+
+*   Create a user-friendly dashboard to visualize interaction data and facilitate debugging.
+
+Note: The current status of the project is marked as experimental, and the roadmap is subject to change based on community feedback and development progress.
