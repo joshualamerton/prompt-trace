@@ -1,6 +1,7 @@
 import pytest
 from . import prompt_tracer  # Import the module under test
 
+
 class TestPromptTracer:
     def test_init(self):
         """Test that PromptTracer initializes correctly."""
@@ -31,7 +32,10 @@ class TestPromptTracer:
         tracer = prompt_tracer.PromptTracer()
         tracer.record_interaction("What is your name?", "John Doe")
         tracer.record_interaction("How old are you?", "30")
-        assert tracer.get_interaction_history() == [{"prompt": "What is your name?", "response": "John Doe"}, {"prompt": "How old are you?", "response": "30"}]
+        assert tracer.get_interaction_history() == [
+            {"prompt": "What is your name?", "response": "John Doe"},
+            {"prompt": "How old are you?", "response": "30"},
+        ]
 
     def test_get_interaction_history_empty(self):
         """Test that get_interaction_history returns an empty list when no interactions have been recorded."""
